@@ -44,6 +44,14 @@
   font-size: 2rem;
 }
 
+.moon {
+  display: block;
+  height: 40px;
+}
+.sun {
+  display: block;
+  height: 40px;
+}
 .navbar__menu {
   display: flex;
   align-items: center;
@@ -89,6 +97,33 @@
   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   color: #fff;
   transition: all 0.3s ease;
+}
+
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.invert {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+
+/* button handling */
+
+.moon {
+  display: block;
+}
+
+.sun {
+  display: none;
+}
+
+.dark-mode .moon {
+  display: none;
+}
+
+.dark-mode .sun {
+  display: block;
 }
 
 .navbar__links:hover {
@@ -548,7 +583,9 @@
   margin-top: 24px;
   font-size: 20px;
 }
-
+btn {
+  font-size: 15px;
+}
 .services__btn {
   display: flex;
   justify-content: center;
@@ -703,3 +740,4 @@
     width: 100%;
   }
 }
+ 
